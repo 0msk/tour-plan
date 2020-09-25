@@ -27,6 +27,7 @@
 				</form>
 				<a href="#" class="user navbar__user">
 					<img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+					<!-- ? как исправить проблему расплющивания картинки в браузерах IE & Edge -->
 					<span class="user__name">Nathan</span>
 				</a>
 				<button class="menu-button navbar-top__menu-button">
@@ -103,8 +104,11 @@
 				<!-- /.hotel-info__text -->
 				<div class="rating hotel-info__rating">
 					<span class="rating__text">User Rattings</span>
-					<span class="rating__counter">4.5 /</span>
-					<span class="rating__five">5</span>
+					<div class="rating-counter">
+						<span class="rating__value">4.5</span>
+						<span class="rating__value-max">5</span>
+					</div>
+					<!-- /.rating-counter -->
 				</div>
 				<!-- /.rating hotel-info__rating -->
 			</div>
