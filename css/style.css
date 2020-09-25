@@ -605,10 +605,10 @@ template {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  font-weight: 700;
 }
 
 .rating__value {
-  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
 }
