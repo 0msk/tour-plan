@@ -624,8 +624,9 @@ template {
 
 .swiper-container {
   position: relative;
-  width: 100%;
-  min-height: 450px;
+  margin: 0;
+  width: 728px;
+  height: 450px;
   border-radius: 8px;
 }
 
