@@ -554,6 +554,15 @@ template {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -597,7 +606,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  min-height: 450px;
   border-radius: 8px;
 }
 
@@ -643,6 +652,83 @@ template {
 .slider-button__prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.booking {
+  padding: 27px;
+  width: 350px;
+  min-height: 210px;
+  border-radius: 8px;
+  font-family: Nunito;
+  background: #0A223D;
+  color: #ffffff;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__start {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.booking__pricetag {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.booking__per-room {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__room {
+  margin-top: 4px;
+}
+
+.booking__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__text:last-child {
+  margin-bottom: 0;
+}
+
+.booking__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.booking__description {
+  margin-left: 9px;
 }
 
 @media (max-width: 1200px) {
