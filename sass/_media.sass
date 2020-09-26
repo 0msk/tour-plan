@@ -26,9 +26,15 @@
 			flex-direction: column
 		&__slider
 			margin-bottom: 30px
+		&-right
+			flex-direction: row
+	.booking
+		width: 340px
 	.slider
 		width: 100%
-		// ?почему не хочет обрать ширину от родителя
+	.map
+		width: 340px
+		// ?почему не хочет брать ширину от родителя
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -77,3 +83,19 @@
 	.stars
 		flex-basis: auto
 		margin: 0
+	.slider
+		height: 350px
+	.hotel
+		&-right
+			flex-direction: column
+			min-height: 450px
+	.booking
+		width: 100%
+	.map
+		width: 100%
+@media (max-width: 576px)
+	.slider
+		height: 250px
+	.hotel
+		&__slider
+			margin-bottom: 20px
