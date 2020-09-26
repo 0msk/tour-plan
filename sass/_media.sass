@@ -4,7 +4,8 @@
 	.slider
 		max-width: 530px
 @media (max-width: 992px)
-	.container
+	.container,
+	.newsletter-wrapper
 		max-width: 700px
 	.navbar
 		&-top
@@ -34,7 +35,8 @@
 		width: 100%
 	.map
 		width: 340px
-		// ?почему не хочет брать ширину от родителя
+	.newsletter
+		padding: 92px 0 103px 0
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -93,9 +95,20 @@
 		width: 100%
 	.map
 		width: 100%
+	.newsletter
+		padding: 76px 0 83px 0
+		&-wrapper
+			max-width: 576px
+			width: 92%
+			flex-direction: column
+			align-items: flex-start
+		&__title
+			margin-bottom: 37px
 @media (max-width: 576px)
 	.slider
 		height: 250px
 	.hotel
 		&__slider
 			margin-bottom: 20px
+	.subscribe
+		width: 100%
