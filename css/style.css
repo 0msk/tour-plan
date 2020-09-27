@@ -929,6 +929,9 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .slider {
+    max-width: 100%;
+  }
   .navbar-top {
     padding: 30px 0;
   }
