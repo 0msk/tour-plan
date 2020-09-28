@@ -362,7 +362,7 @@ template {
 }
 
 .navbar {
-  background-color: #F5FAFE;
+  background-color: #ffffff;
 }
 
 .navbar-top {
@@ -375,7 +375,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0;
+  padding: 37px 0 41px 0;
 }
 
 .navbar-top__menu-button {
@@ -477,6 +477,10 @@ template {
   color: #333333;
 }
 
+.breadcrumb {
+  background-color: #F5FAFE;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,7 +489,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 18px 0;
+  padding: 18px 0 19px 0;
   list-style-type: none;
   font-size: 10px;
   line-height: 13px;
@@ -502,7 +506,7 @@ template {
 }
 
 .hotel {
-  padding: 23px 0 60px 0;
+  padding: 23px 0 70px 0;
 }
 
 .hotel-info {
@@ -577,8 +581,29 @@ template {
 }
 
 .stars {
+  height: 8px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars__wrapper {
+  margin-bottom: 4px;
+}
+
+.stars__star {
+  height: 100%;
+  margin-right: 2px;
+}
+
+.stars__star:last-child {
+  margin: 0;
+}
+
+.stars__image {
+  display: block;
 }
 
 .offer {
@@ -591,10 +616,9 @@ template {
 }
 
 .rating {
-  padding: 7px 6px;
+  padding: 9px 6px 6px 7px;
   text-align: center;
   max-width: 65px;
-  min-height: 45px;
   border-radius: 4px;
   color: #ffffff;
   background-color: #EC1F46;
@@ -632,7 +656,7 @@ template {
 
 .rating__value-max {
   font-size: 10px;
-  line-height: 13px;
+  line-height: 15px;
 }
 
 .swiper-container {
@@ -711,7 +735,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 14px;
 }
 
 .booking__price {
@@ -737,7 +761,7 @@ template {
 
 .booking__per-room {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 8px;
 }
 
 .booking__room {
@@ -907,6 +931,7 @@ template {
 .subscribe__button {
   position: absolute;
   min-width: 65px;
+  font-size: 12px;
   right: 0;
   top: 0;
   height: 100%;
