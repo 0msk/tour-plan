@@ -1081,6 +1081,13 @@ template {
             order: -1;
     margin-bottom: 10px;
   }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
   .breadcrumb-list {
     padding: 19px 0 22px 0;
   }
@@ -1094,13 +1101,6 @@ template {
   }
   .slider {
     height: 350px;
-  }
-  .hotel-right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 424px;
   }
   .booking {
     width: 100%;
@@ -1145,6 +1145,9 @@ template {
   }
   .hotel__slider {
     margin-bottom: 18px;
+  }
+  .hotel-right {
+    min-height: 424px;
   }
   .subscribe {
     width: 100%;
