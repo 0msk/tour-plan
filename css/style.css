@@ -528,6 +528,11 @@ template {
 
 .hotel-info__name {
   margin: 0 14px 0 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333333;
 }
 
 .hotel-info__description {
@@ -543,14 +548,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.hotel-name {
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #333333;
 }
 
 .hotel-description {
@@ -578,6 +575,66 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+}
+
+.hotel-slider__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hotel-slider__item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 1;
+}
+
+.hotel-slider__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hotel-slider__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.hotel-slider__button__next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.hotel-slider__button__prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
 }
 
 .stars {
@@ -619,6 +676,7 @@ template {
   padding: 9px 6px 6px 7px;
   text-align: center;
   max-width: 65px;
+  min-height: 45px;
   border-radius: 4px;
   color: #ffffff;
   background-color: #EC1F46;
@@ -657,65 +715,6 @@ template {
 .rating__value-max {
   font-size: 10px;
   line-height: 15px;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 8px;
-}
-
-.swiper-container:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 1;
-}
-
-.swiper-slide__image {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slider {
-  width: 728px;
-  height: 450px;
-}
-
-.slider-button {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 99;
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-
-.slider-button__next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-}
-
-.slider-button__prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
 }
 
 .booking {
@@ -938,6 +937,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+}
+
+.reviews {
+  padding: 40px 0 70px 0;
 }
 
 @media (max-width: 1200px) {
