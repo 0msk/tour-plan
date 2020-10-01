@@ -15,8 +15,8 @@ var hotelSlider = new Swiper('.hotel-slider', {
 var reviewsSlider = new Swiper('.reviews-slider', {
 	loop: true,
 	navigation: {
-		nextEl: '.reviews-slider__next',
-		prevEl: '.reviews-slider__prev',
+		nextEl: '.reviews-slider__button__next',
+		prevEl: '.reviews-slider__button__prev',
 	},
 	keyboard: {
 		enabled: true,
