@@ -981,7 +981,6 @@ template {
   height: 47px;
   background-image: url(../img/quote-left.svg);
   background-repeat: no-repeat;
-  opacity: 0.4;
 }
 
 .reviews-slider__item::after {
@@ -993,7 +992,7 @@ template {
   height: 47px;
   background-image: url(../img/quote-right.svg);
   background-repeat: no-repeat;
-  opacity: 0.4;
+  z-index: -1;
 }
 
 .reviews-slider__button {
