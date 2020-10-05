@@ -660,7 +660,7 @@ template {
   margin: 0;
 }
 
-.stars__image {
+.star__image {
   display: block;
 }
 
@@ -1426,6 +1426,17 @@ template {
     margin-right: -88px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+  }
+  .activities {
+    padding: 19px 0 68px 0;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0 0 36px 0;
+  }
+  .activities__card:last-child {
+    margin-bottom: 0;
   }
   .card {
     width: 48%;
