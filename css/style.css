@@ -623,8 +623,8 @@ template {
   border: none;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: 10px;
+  background-position: center;
   background-color: transparent;
 }
 
@@ -997,18 +997,18 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 45.8%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 99;
   width: 30px;
   height: 30px;
+  border: none;
+  cursor: pointer;
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: center;
-  border: none;
   background-color: transparent;
-  cursor: pointer;
-  z-index: 1;
 }
 
 .reviews-slider__button__prev {

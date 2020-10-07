@@ -37,18 +37,8 @@
 				background-image: url(../img/quote-right.svg)
 				background-repeat: no-repeat
 		&__button
-			position: absolute
-			top: 45.8%
-			transform: translateY(-50%)
-			width: 30px
-			height: 30px
-			background-repeat: no-repeat
-			background-size: 10px
-			background-position: center
-			border: none
-			background-color: transparent
-			cursor: pointer
-			z-index: 1
+			// top: 45.8%
+			@include slider-button($width: 30px, $height: 30px)
 			&__prev
 				background-image: url(../img/arrow-prev-secondary.svg)
 				left: 18px
