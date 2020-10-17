@@ -45,7 +45,7 @@
 		&--inline
 			margin: 0 43px 0 0
 		&--contact
-			margin: 13px 0 26px 0
+			margin: 0 0 26px 0
 		&--mb-3
 			margin-bottom: 34px
 		&--send
@@ -63,6 +63,8 @@
 		color: $footer-text-color
 		&--mb-2
 			margin-bottom: 20px
+			&:last-child
+				margin: 0
 	&__legal
 		margin-left: 58px
 	&__icon
@@ -113,17 +115,22 @@
 		background-color: $primary
 		border: none
 		cursor: pointer
+		&-wrapper
+			display: flex
+			align-items: center
+			flex-basis: 100%
+			justify-content: space-between
 	&__info
 		font-weight: bold
 		font-size: 12px
 		line-height: 15px
 		color: #E0E0E0
 	&__bottom
-		margin-top: 21px
 		grid-row: 6
 		grid-column: 2 / 5
 		display: flex
 		justify-content: space-between
+		align-items: center
 	&-bottom
 		&__link
 			margin-right: 8px

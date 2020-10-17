@@ -267,11 +267,18 @@
 		&__logo
 			grid-row: 1
 			grid-column: 1
+		&__title
+			&--inline
+				margin: 0
 		&__social
 			&-network
 				grid-row: 2
 				grid-column: 1
 				justify-self: flex-start
+				min-height: 60px
+				flex-direction: column
+				justify-content: space-between
+				align-items: start
 		&__additional
 			grid-row: 3
 			grid-column: 1
@@ -288,6 +295,24 @@
 			&-form
 				grid-row: 7
 				grid-column: 1
+		&__button
+			&-wrapper
+				flex-direction: column-reverse
+				align-items: flex-start
+				min-height: 80px
+		&-bottom
+			&__link
+				margin: 0
 		&__bottom
+			flex-wrap: wrap
 			grid-row: 8
 			grid-column: 1
+			min-height: 50px
+		&__documents
+			display: flex
+			flex-basis: 100%
+			justify-content: space-between
+		&__payment
+			&-methods
+				display: flex
+				align-items: center
