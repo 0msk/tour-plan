@@ -942,7 +942,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 40px 0 69px 0;
 }
 
 .reviews__title {
@@ -1081,7 +1081,7 @@ template {
 }
 
 .activities__title {
-  margin: 0 0 57px 0;
+  margin: 0 0 56px 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -1152,7 +1152,7 @@ template {
 .card__button {
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 17px;
   color: #ffffff;
   padding: 7px 22px;
   border: none;
@@ -1175,8 +1175,8 @@ template {
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-row-gap: 24px;
   grid-column-gap: 32px;
-  grid-auto-rows: minmax(28px, -webkit-min-content);
-  grid-auto-rows: minmax(28px, min-content);
+  grid-auto-rows: minmax(29px, -webkit-min-content);
+  grid-auto-rows: minmax(29px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -1226,6 +1226,7 @@ template {
 
 .footer__contact-details {
   grid-column: span 2;
+  margin-top: 13px;
 }
 
 .footer__contact-form {
@@ -1236,7 +1237,7 @@ template {
   margin: 0 0 19px 0;
   font-weight: bold;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
@@ -1401,6 +1402,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 19px;
 }
 
 .footer-bottom__link {
@@ -1525,6 +1527,9 @@ template {
   .reviews-slider__button__next {
     right: 0;
   }
+  .reviews-slider__text {
+    margin-left: 2px;
+  }
   .activities {
     padding: 50px 0 50px 0;
   }
@@ -1542,27 +1547,36 @@ template {
   .card__title {
     margin-bottom: 18px;
   }
+  .footer {
+    padding-top: 74px;
+  }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[7];
         grid-template-columns: repeat(7, 1fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 51px;
+    grid-column-gap: 0;
   }
   .footer__logo {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 2;
+    height: 108px;
+    width: 98px;
   }
   .footer__social-network {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
-    grid-column: span 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3 / 6;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: 13px 0 0 -13px;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -1585,11 +1599,16 @@ template {
     -ms-grid-row: 3;
     grid-row: 3;
     grid-column: span 7;
+    margin-top: 8px;
   }
   .footer__contact-form {
     -ms-grid-row: 4;
     grid-row: 4;
-    grid-column: span 5;
+    grid-column: span 6;
+    padding-top: 8px;
+  }
+  .footer__form {
+    width: 90%;
   }
   .footer__input {
     -ms-flex-preferred-size: 47%;
@@ -1597,10 +1616,12 @@ template {
   }
   .footer__bottom {
     margin: 0;
+    -ms-grid-row: 5;
+    grid-row: 5;
     grid-column: span 7;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
   .footer__documents {
     margin: 0;
@@ -1767,6 +1788,9 @@ template {
   .card {
     width: 48%;
   }
+  .footer-wrapper {
+    grid-column-gap: 5px;
+  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1782,6 +1806,9 @@ template {
   }
   .hotel-right {
     min-height: 424px;
+  }
+  .logo {
+    width: 100px;
   }
   .booking {
     padding-top: 31px;
@@ -1805,12 +1832,19 @@ template {
         -ms-flex-align: center;
             align-items: center;
   }
+  .activities {
+    padding-top: 0;
+  }
   .card {
     width: 100%;
+  }
+  .footer {
+    padding-top: 67px;
   }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-row-gap: 30px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1820,6 +1854,9 @@ template {
   }
   .footer__title--inline {
     margin: 0;
+  }
+  .footer__title--send {
+    margin-bottom: 16px;
   }
   .footer__social-network {
     -ms-grid-row: 2;
@@ -1838,22 +1875,26 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    margin: 14px 0 0 0;
+  }
+  .footer__social-links {
+    margin: 22px 0 0 1px;
   }
   .footer__additional {
-    -ms-grid-row: 3;
-    grid-row: 3;
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-  .footer__categories {
     -ms-grid-row: 4;
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__legal {
+  .footer__categories {
     -ms-grid-row: 5;
     grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .footer__legal {
+    -ms-grid-row: 3;
+    grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
   }
@@ -1868,6 +1909,13 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+    padding-top: 33px;
+  }
+  .footer__form {
+    width: 100%;
+  }
+  .footer__message {
+    margin-bottom: 16px;
   }
   .footer__button-wrapper {
     -webkit-box-orient: vertical;

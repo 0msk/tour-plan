@@ -73,6 +73,8 @@
 					left: 0
 				&__next
 					right: 0
+			&__text
+				margin-left: 2px
 	.activities
 		padding: 50px 0 50px 0
 		&-wrapper
@@ -85,18 +87,23 @@
 		&__title
 			margin-bottom: 18px
 	.footer
+		padding-top: 74px
 		&-wrapper
 			grid-template-columns: repeat(7, 1fr)
-			grid-row-gap: 40px
+			grid-row-gap: 51px
+			grid-column-gap: 0
 		&__logo
 			grid-row: 1 / 2
 			grid-column: span 2
+			height: 108px
+			width: 98px
 		&__social
 			&-network
 				grid-row: 1 / 2
-				grid-column: span 4
+				grid-column: 3 / 6
 				align-self: center
-				justify-self: center
+				justify-self: start
+				margin: 13px 0 0 -13px
 		&__categories
 			grid-row: 2 / 3
 			grid-column: span 2
@@ -111,15 +118,20 @@
 			&-details
 				grid-row: 3
 				grid-column: span 7
+				margin-top: 8px
 			&-form
 				grid-row: 4
-				grid-column: span 5
+				grid-column: span 6
+				padding-top: 8px
+		&__form
+			width: 90%
 		&__input
 			flex-basis: 47%
 		&__bottom
 			margin: 0
+			grid-row: 5
 			grid-column: span 7
-			align-self: center
+			align-self: end
 		&__documents
 			margin: 0
 @media (max-width: 767px)
@@ -233,6 +245,8 @@
 	.card
 		width: 48%
 	.footer
+		&-wrapper
+			grid-column-gap: 5px
 		&__input
 			flex-basis: 100%
 @media (max-width: 576px)
@@ -243,6 +257,8 @@
 			height: 179px
 		&-right
 			min-height: 424px
+	.logo
+		width: 100px
 	.booking
 		padding-top: 31px
 		&__num
@@ -259,17 +275,23 @@
 			font-size: 18px
 			line-height: 23px
 			align-items: center
+	.activities
+		padding-top: 0
 	.card
 		width: 100%
 	.footer
+		padding-top: 67px
 		&-wrapper
 			grid-template-columns: 1fr
+			grid-row-gap: 30px
 		&__logo
 			grid-row: 1
 			grid-column: 1
 		&__title
 			&--inline
 				margin: 0
+			&--send
+				margin-bottom: 16px
 		&__social
 			&-network
 				grid-row: 2
@@ -279,14 +301,17 @@
 				flex-direction: column
 				justify-content: space-between
 				align-items: start
+				margin: 14px 0 0 0
+			&-links
+				margin: 22px 0 0 1px
 		&__additional
-			grid-row: 3
-			grid-column: 1
-		&__categories
 			grid-row: 4
 			grid-column: 1
-		&__legal
+		&__categories
 			grid-row: 5
+			grid-column: 1
+		&__legal
+			grid-row: 3
 			grid-column: 1
 		&__contact
 			&-details
@@ -295,6 +320,11 @@
 			&-form
 				grid-row: 7
 				grid-column: 1
+				padding-top: 33px
+		&__form
+			width: 100%
+		&__message
+			margin-bottom: 16px
 		&__button
 			&-wrapper
 				flex-direction: column-reverse
