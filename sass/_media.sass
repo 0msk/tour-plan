@@ -135,12 +135,51 @@
 		&__documents
 			margin: 0
 @media (max-width: 767px)
+	body
+		padding-top: 79px
 	.container
 		max-width: 576px
 		width: 87.5%
 	.navbar
-		&__search, &-menu, &__user
+		&__mobile
+			&--fixed
+				position: fixed
+				top: 0
+				right: 0
+				left: 0
+				z-index: 99
+		&__search, &__user
+			&--mobile
+				&_hidden
+					display: none
+				&_visible
+					display: flex
+		&__user
+			flex-direction: column
+			justify-content: center
+		&__search
+			&--mobile
+				&_visible
+					margin: 0
+		&-bottom
 			display: none
+			position: fixed
+			top: 79px
+			right: 0
+			bottom: 0
+			left: 0
+			&__visible
+				display: block
+				padding-top: 12px
+		&-menu
+			flex-direction: column
+			&__item
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+				&--mobile
+					&_visible
+						display: block
 		&-top
 			padding: 31px 0 24px 0
 		&-logo
@@ -164,6 +203,12 @@
 				width: 16px
 				height: 1px
 				background: $text-color
+	.user
+		&__name
+			&--light
+				color: $light
+				padding: 0
+				margin-top: 10px
 	.hotel
 		padding: 0 0 20px 0
 		&-wrapper
