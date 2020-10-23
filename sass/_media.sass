@@ -148,6 +148,7 @@
 				right: 0
 				left: 0
 				z-index: 99
+				box-shadow: 0 0 10px rgb(236, 31, 70)
 		&__search, &__user
 			&--mobile
 				&_hidden
@@ -160,11 +161,11 @@
 		&__search
 			&--mobile
 				&_visible
-					margin: 0
+					margin: 0 0 38px 0
 		&-bottom
 			display: none
 			position: fixed
-			top: 79px
+			top: 78px
 			right: 0
 			bottom: 0
 			left: 0
@@ -174,14 +175,15 @@
 		&-menu
 			flex-direction: column
 			&__item
-				margin-bottom: 20px
+				&:nth-child(n+3)
+					margin-bottom: 16px
 				&:last-child
 					margin-bottom: 0
 				&--mobile
 					&_visible
 						display: block
 		&-top
-			padding: 31px 0 24px 0
+			padding: 30px 0 24px 0
 		&-logo
 			width: 99px
 			height: 24px
@@ -208,7 +210,7 @@
 			&--light
 				color: $light
 				padding: 0
-				margin-top: 10px
+				margin: 7px 0 26px 0
 	.hotel
 		padding: 0 0 20px 0
 		&-wrapper
@@ -304,6 +306,11 @@
 			min-height: 424px
 	.logo
 		width: 100px
+	.search
+		&-header
+			height: 40px
+		&__input
+			width: 245px
 	.booking
 		padding-top: 31px
 		&__num
