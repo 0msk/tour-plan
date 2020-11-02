@@ -1,7 +1,7 @@
-<?php include("header.php")?>
+<?php include("header.html")?>
 <div>
 <h2>
 Hotels
 </h2>
 </div>
-<?php include("footer.php")?>
+<?php include("footer.html")?>
