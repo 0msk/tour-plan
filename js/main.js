@@ -55,4 +55,3 @@ $(document).ready(function () {
 		modalDialog.removeClass("modal__dialog--visible");
 	}
 });
-// 23:28. 26 пункт. отмена класса висибл у мадального окна
